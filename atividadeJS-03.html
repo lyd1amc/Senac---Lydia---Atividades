@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Antes e Depois</title>
+</head>
+<body>
+  <h2>Antes e Depois</h2>
+  <button onclick="mostrar()">Clique aqui</button>
+
+  <script>
+    function mostrar() {
+      var numero = prompt("Digite um número inteiro:")
+      numero = parseInt(numero)
+
+      if (!isNaN(numero)) {
+        alert("Antecessor: " + (numero - 1) + "\nSucessor: " + (numero + 1))
+      } else {
+        alert("Você não digitou um número válido.")
+      }
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>

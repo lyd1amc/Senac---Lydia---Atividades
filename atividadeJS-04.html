@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora de Troco</title>
+</head>
+<body>
+  <h2>Calculadora de Troco</h2>
+  <button onclick="calcular()">Comprar</button>
+
+  <script>
+    function calcular() {
+      var produto = prompt("Nome do produto:")
+      var preco = prompt("Preço do produto:")
+      var pago = prompt("Quanto o cliente pagou:")
+
+      preco = parseFloat(preco)
+      pago = parseFloat(pago)
+
+      if (!isNaN(preco) && !isNaN(pago) && produto != "") {
+        var troco = pago - preco
+        alert("Você comprou " + produto + ", que custa R$" + preco.toFixed(2) + 
+        ". Deu R$" + pago.toFixed(2) + " e vai receber R$" + troco.toFixed(2) + " de troco. Volte sempre!")
+      } else {
+        alert("Informações inválidas.")
+      }
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>

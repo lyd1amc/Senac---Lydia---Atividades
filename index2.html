@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Temperatura</title>
+</head>
+<body>
+  <button onclick="converterTemp()">Converter Temperatura</button>
+  <p id="resultado"></p>
+
+  <script>
+    function converterTemp() {
+      var c = prompt("Digite a temperatura em °C:");
+      c = parseFloat(c);
+
+      if (isNaN(c)) {
+        alert("Digite um número válido.");
+        return;
+      }
+
+      var k = c + 273.15;
+      var f = (c * 9/5) + 32;
+
+      document.getElementById("resultado").innerHTML = 
+        "Kelvin: " + k.toFixed(2) + " K<br>" +
+        "Fahrenheit: " + f.toFixed(2) + " °F";
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>

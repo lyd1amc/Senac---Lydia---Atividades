@@ -2,48 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=devide-widht
+    , initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <!DOCTYPE html>
-<html>
-<head>
-  <title>Conversor de Distância</title>
-</head>
-<body>
-  <button onclick="converter()">Converter Distância</button>
-  <p id="res"></p>
+    <div class="container">
+<h1>Adivinhe o número</h1>
+<p>Tente adivinhar o número que estou pensando entre 1 e 100</p>
+<p>Você tem <span id="chancesRestantes">10</span>chances</p>
 
-  <script>
-    function converter() {
-      var metros = prompt("Digite a distância em metros:");
-      metros = parseFloat(metros);
-
-      if (isNaN(metros)) {
-        alert("Digite um número válido.");
-        return;
-      }
-
-      var km = metros / 1000;
-      var hm = metros / 100;
-      var dam = metros / 10;
-      var dm = metros * 10;
-      var cm = metros * 100;
-      var mm = metros * 1000;
-
-      var texto = "A distância de " + metros + " metro(s) corresponde a:<br>" +
-                  km + " km<br>" +
-                  hm + " hm<br>" +
-                  dam + " dam<br>" +
-                  dm + " dm<br>" +
-                  cm + " cm<br>" +
-                  mm + " mm";
-
-      document.getElementById("res").innerHTML = texto;
-    }
-  </script>
-</body>
-</html>
+<div class="input-area">
+    <label or="campoPalpite">Digite seu palpite:</label>
+    <input type="number" id="campoPalpite" min="1" max="100">
+    <button id="botaoEnviar">Enviar Palpite</button>
+</div>
+    <div class="resultado-area">
+        
+    </div>
+    </div>
 </body>
 </html>
